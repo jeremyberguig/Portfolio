@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section+section {
+    border-top: 1px gray solid;
+}
