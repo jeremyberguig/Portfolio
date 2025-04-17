@@ -1,13 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "competences.html"],
+  content: [".src/**/*.{js,ts,html}"],
   theme: {
     extend: {},
   },
-  plugins: [
-    require("@catppuccin/tailwindcss")({
-      prefix: "ctp",
-      defaultFlavour: "latte",
-    }),
-  ],
+  plugins: [],
 };
