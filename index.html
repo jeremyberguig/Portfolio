@@ -4,26 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/listener.js"></script>
     <title>Portfolio</title>
   </head>
-  <body>
-    <nav class="shadow-xl bg-ctp-surface0 h-10">
-      <ul class="flex justify-center items-center h-full">
-        <li class="mr-6">
-          <a class="text-blue-500 hover:text-blue-800" href="index.html">Accueil</a>
-        </li>
-        <li class="mr-6">
-          <a class=" hover:text-blue-500" href="competences.html">Compétences</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="flex bg-ctp-base">
-      <aside class="bg-ctp-surface0 m-4 min-w-max max-h-80 rounded">
+  <body class="flex bg-base h-lvh">
+    <aside class="bg-primary w-10 min-w-max">
         <div class="flex p-3">
           <img src="./ressource/photo_profil.jpg" alt="Photo de Jérémy Berguig" class="rounded-full" />
           <section class="p-3">
             <p class="text-gray-900 font-medium">Jérémy BERGUIG</p>
-            <p class="text-gray-900 font-medium">Developpeur Full-stack</p>
+            <p class="text-gray-900 font-medium">Developpeur Fullstack</p>
             <p class="text-gray-900 font-medium">Tel: <a href="tel:+330640476270">06 40 47 62 70</a></p>
             <p class="text-gray-900 font-medium">
               Mail:
@@ -51,41 +42,51 @@
           </section>
         </div>
       </aside>
-      <main class="flex m-6">
-        <div class="flex-column">
-          <h2 class="text-3xl">Parcours Académique</h2>
-          <section>
-            <div class="ps-4 py-4 ">
-              <ol class="relative border-s border-gray-300">
-                <li class="mb-10 ms-4">
-                    <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-500">Octobre 2022 - Aout 2024</time>
-                    <h3 class="text-lg font-semibold text-gray-900">Alternance chez MOM packaging</h3>
-                    <p class="text-base font-normal text-gray-600">Mon alternance chez MOM packaging en même temps que mes études m'a beaucoup apporté. Grâce à celle-ci j'ai pu me former aussi bien d'un point de vue IT qu'OT.</p>
-                    <p class="text-base font-normal text-gray-600">Je suis habitué à travailler en équipe et échanger avec différents clients pour améliorer, modifier un projet.</p>
-                </li>             
-                <li class="mb-10 ms-4">
-                  <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">Septembre 2021 - Aout 2024</time>
+    <div>
+      <nav class="bg-surface shadow-xl h-3lvh">
+        <ul class="flex justify-center items-center h-full">
+          <li class="mr-6">
+            <a class="text-blue-500 hover:text-blue-800" href="index.html">Accueil</a>
+          </li>
+          <li class="mr-6">
+            <a class=" hover:text-blue-500" href="competences.html">Compétences</a>
+          </li>
+          <li class="mr-6">
+            <a class="hover:text-blue-500" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="h-97lvh p-2 grid grid-cols-2 grid-rows-2">
+          <section class="bg-surface rounded m-4">
+            <h2 class="text-3xl m-3 mb-4 sticky top-0 bg-surface z-10">Parcours Académique</h2>
+            <div class="scroll-container scroll-fade">
+              <ol class="relative">
+                <li class="scroll-item" tabindex="0">
+                    <time class="text-sm font-normal leading-none text-gray-500">Septembre 2019 - Juin 2021</time>
+                    <h3 class="text-lg font-semibold text-gray-900">Bac Maths NSI</h3>
+                    <p class="font-normal text-gray-600">Mes années de première et de terminal au lycée Gustave Eiffel avec les spécialité NSI et Maths mon permis d'acquérir un espprit critique et donner des base en Informatique.</p>
+                    <p class="font-normal text-gray-600">Grâce au mathématique j'ai pu augmenter ma capacité de réfléxion et augmenter le nombre d'outil à ma disposition pour résoudre un problème.</p>
+                    <p class="font-normal text-gray-600">La NSI (Numérique et Science de l'iInformatique), quand à elle m'a donné des notion de base sur l'architecture d'un ordinateur, ce qu'était un langage de programmation et nourris ma passion pour l'informatique.</p>
+                </li>
+                <li class="scroll-item" tabindex="0">
+                  <time class="text-sm font-normal leading-none text-gray-500">Septembre 2021 - Aout 2024</time>
                   <h3 class="text-lg font-semibold text-gray-900">Début de formation à l'IUT de Montreuil</h3>
-                  <p class="text-base font-normal text-gray-600">Le BUT Informatique de Montreuil est un programme qui m'a permis de me spécialiser dans ce domaine passionnant et en pleine évolution qu'est l'informatique.</p>
-                  <p class="mb-4 text-base font-normal text-gray-600">Cela va m'a permis de m'immerger dans l'univers du developpement web et du developpement d'application, d'acquérir des compétences techniques telle que faire une application pour répondre aux besoin d'un client, gérer une équipe et avoir une vision d'ensemble d'un projet, tout en me permettant de développer mon esprit d'analyse et de résolution de problèmes.</p>
+                  <p class="font-normal text-gray-600">Le BUT Informatique de Montreuil est un programme qui m'a permis de me spécialiser dans ce domaine passionnant et en pleine évolution qu'est l'informatique.</p>
+                  <p class="mb-4 font-normal text-gray-600">Cela va m'a permis de m'immerger dans l'univers du developpement web et du developpement d'application, d'acquérir des compétences techniques telle que faire une application pour répondre aux besoin d'un client, gérer une équipe et avoir une vision d'ensemble d'un projet, tout en me permettant de développer mon esprit d'analyse et de résolution de problèmes.</p>
                   <!-- <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                   </svg></a> -->
                 </li>
-                <li class="ms-4">
-                    <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-500">Septembre 2019 - Juin 2021</time>
-                    <h3 class="text-lg font-semibold text-gray-900">Bac Maths NSI</h3>
-                    <p class="text-base font-normal text-gray-600">Mes années de première et de terminal au lycée Gustave Eiffel avec les spécialité NSI et Maths mon permis d'acquérir un espprit critique et donner des base en Informatique.</p>
-                    <p class="text-base font-normal text-gray-600">Grâce au mathématique j'ai pu augmenter ma capacité de réfléxion et augmenter le nombre d'outil à ma disposition pour résoudre un problème.</p>
-                    <p class="text-base font-normal text-gray-600">La NSI (Numérique et Science de l'iInformatique), quand à elle m'a donné des notion de base sur l'architecture d'un ordinateur, ce qu'était un langage de programmation et nourris ma passion pour l'informatique.</p>
-                </li>
+                <li class="scroll-item" tabindex="0">
+                    <time class="text-sm font-normal leading-none text-gray-500">Octobre 2022 - Aout 2024</time>
+                    <h3 class="text-lg font-semibold text-gray-900">Alternance chez MOM packaging</h3>
+                    <p class="font-normal text-gray-600">Mon alternance chez MOM packaging en même temps que mes études m'a beaucoup apporté. Grâce à celle-ci j'ai pu me former aussi bien d'un point de vue IT qu'OT.</p>
+                    <p class="font-normal text-gray-600">Je suis habitué à travailler en équipe et échanger avec différents clients pour améliorer, modifier un projet.</p>
+                </li>             
             </ol>
           </section>
-          <h2 class="text-3xl">Expériences</h2>
-          <section>
+          <section class="bg-secondary overflow-auto rounded m-4">
+            <h2 class="text-3xl m-3">Expériences</h2>
             <ol class="space-y-4 text-gray-800 list-decimal list-inside">
               <li>
                 Réaliser un développement d'application
@@ -97,13 +98,13 @@
                     une application minimale avant de peaufiner les détails et les features.
                     Voir ici:
                     <a
-                      class="text-blue-500 hover:text-blue-800"
+                      class="text-link"
                       href="https://github.com/DUT-Info-Montreuil/SAE-5.A-Front-EDT-APP"
                       >le front</a
                     >
                     et
                     <a
-                      class="text-blue-500 hover:text-blue-800"
+                      class="text-link"
                       href="https://github.com/DUT-Info-Montreuil/SAE-5.A-Back-EDT-APP-FABJM"
                       >le back</a
                     >
@@ -119,7 +120,7 @@
                      Et ainsi perdre moins de temps en travail en groupe. C'est notamment le projet du 
                      semestre 3 qui m'a permis de m'en rendre compte.
                     <a
-                      class="text-blue-500 hover:text-blue-800"
+                      class="text-link"
                       href="https://github.com/DUT-Info-Montreuil/3HArt"
                       >Voir ici</a
                     >
@@ -141,13 +142,13 @@
                     contraint au niveau de la taille du conteneur docker. Nous avons donc 
                     du le créer avec des images plus petites. Voir ici:
                     <a
-                      class="text-blue-500 hover:text-blue-800"
+                      class="text-link"
                       href="https://github.com/DUT-Info-Montreuil/SAE-5.A-Front-EDT-APP"
                       >le front</a
                     >
                     et
                     <a
-                      class="text-blue-500 hover:text-blue-800"
+                      class="text-link"
                       href="https://github.com/DUT-Info-Montreuil/SAE-5.A-Back-EDT-APP-FABJM"
                       >le back</a
                     >
@@ -171,7 +172,37 @@
               </li>
             </ol>
           </section>
-        </div>
+          <section class="bg-surface overflow-auto rounded m-4">
+            <h2 class="text-3xl m-3">Parcours Académique</h2>
+            <div class="ps-4 py-4 ">
+              <ol class="relative border-s border-gray-300">
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-500">Octobre 2022 - Aout 2024</time>
+                    <h3 class="text-lg font-semibold text-gray-900">Alternance chez MOM packaging</h3>
+                    <p class="font-normal text-gray-600">Mon alternance chez MOM packaging en même temps que mes études m'a beaucoup apporté. Grâce à celle-ci j'ai pu me former aussi bien d'un point de vue IT qu'OT.</p>
+                    <p class="font-normal text-gray-600">Je suis habitué à travailler en équipe et échanger avec différents clients pour améliorer, modifier un projet.</p>
+                </li>             
+                <li class="mb-10 ms-4">
+                  <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">Septembre 2021 - Aout 2024</time>
+                  <h3 class="text-lg font-semibold text-gray-900">Début de formation à l'IUT de Montreuil</h3>
+                  <p class="font-normal text-gray-600">Le BUT Informatique de Montreuil est un programme qui m'a permis de me spécialiser dans ce domaine passionnant et en pleine évolution qu'est l'informatique.</p>
+                  <p class="mb-4 font-normal text-gray-600">Cela va m'a permis de m'immerger dans l'univers du developpement web et du developpement d'application, d'acquérir des compétences techniques telle que faire une application pour répondre aux besoin d'un client, gérer une équipe et avoir une vision d'ensemble d'un projet, tout en me permettant de développer mon esprit d'analyse et de résolution de problèmes.</p>
+                  <!-- <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg></a> -->
+                </li>
+                <li class="ms-4">
+                    <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-500">Septembre 2019 - Juin 2021</time>
+                    <h3 class="text-lg font-semibold text-gray-900">Bac Maths NSI</h3>
+                    <p class="font-normal text-gray-600">Mes années de première et de terminal au lycée Gustave Eiffel avec les spécialité NSI et Maths mon permis d'acquérir un espprit critique et donner des base en Informatique.</p>
+                    <p class="font-normal text-gray-600">Grâce au mathématique j'ai pu augmenter ma capacité de réfléxion et augmenter le nombre d'outil à ma disposition pour résoudre un problème.</p>
+                    <p class="font-normal text-gray-600">La NSI (Numérique et Science de l'iInformatique), quand à elle m'a donné des notion de base sur l'architecture d'un ordinateur, ce qu'était un langage de programmation et nourris ma passion pour l'informatique.</p>
+                </li>
+            </ol>
+          </section>
       </main>
     </div>
   </body>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Portfolio - Jérémy Berguig</title>
+  </head>
+  <body>
+    <nav class="shadow-xl bg-ctp-surface0 h-10">
+      <ul class="flex justify-center items-center h-full">
+        <li class="mr-6">
+          <a class="hover:text-blue-500" href="index.html">Accueil</a>
+        </li>
+        <li class="mr-6">
+          <a class="hover:text-blue-500" href="competences.html">Compétences</a>
+        </li>
+        <li class="mr-6">
+          <a class="text-blue-500 hover:text-blue-800" href="portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex bg-ctp-base h-lvh">
+      <aside class="bg-ctp-surface0 m-4 min-w-max max-h-80 rounded">
+        <div class="flex p-3">
+          <img
+            src="./ressource/photo_profil.jpg"
+            alt="Photo de Jérémy Berguig"
+            class="rounded-full"
+          />
+          <section class="p-3">
+            <p class="text-gray-900 font-medium">Jérémy BERGUIG</p>
+            <p class="text-gray-900 font-medium">Développeur Full-stack</p>
+            <p class="text-gray-900 font-medium">
+              Tel: <a href="tel:+330640476270">06 40 47 62 70</a>
+            </p>
+            <p class="text-gray-900 font-medium">
+              Mail:
+              <a
+                href="mailto:berguigjeremy@gmail.com?subject=Contact%20Portfolio"
+                >berguigjeremy@gmail.com</a
+              >
+            </p>
+            <div id="social" class="mt-3">
+              <a
+                href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-berguig-a07650227/"
+              >
+                <img
+                  src="icon/linkedin_logo_icon.svg"
+                  height="20"
+                  width="20"
+                  alt="Linkedin"
+                />
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="border-t-[1px] border-gray-500 m-2 p-1">
+          <section>
+            <a href="ressource/CV.pdf" download="CV_full-stack_Jérémy_Berguig"
+              >Télécharger le CV</a
+            >
+          </section>
+        </div>
+      </aside>
+      <main class="flex-1 m-6">
+        <header>
+          <h1 class="text-4xl mb-4">Projets & Réalisations</h1>
+
+          <p class="text-gray-700 mb-6">
+            Voici une sélection de projets sur lesquels j'ai travaillé. Cliquer
+            sur chaque carte pour accéder au dépôt ou à la démo.
+          </p>
+        </header>
+
+        <section class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Projet 1 -->
+
+          <article class="p-4 bg-ctp-surface0 rounded shadow hover:shadow-lg">
+            <h2 class="text-xl font-semibold mb-2">
+              EDT - Application de planning
+            </h2>
+
+            <p class="text-sm text-gray-600 mb-3">
+              Application réalisée lors d'un projet universitaire (semestre 5).
+              Frontend React + backend Node/Python. Gestion d'emploi du temps,
+              authentification et export.
+            </p>
+
+            <p class="text-sm">
+              <a
+                class="text-blue-500 hover:text-blue-800"
+                href="https://github.com/DUT-Info-Montreuil/SAE-5.A-Front-EDT-APP"
+                >Voir le front</a
+              >
+              •
+              <a
+                class="text-blue-500 hover:text-blue-800"
+                href="https://github.com/DUT-Info-Montreuil/SAE-5.A-Back-EDT-APP-FABJM"
+                >Voir le back</a
+              >
+            </p>
+          </article>
+
+          <!-- Projet 2 -->
+
+          <article class="p-4 bg-ctp-surface0 rounded shadow hover:shadow-lg">
+            <h2 class="text-xl font-semibold mb-2">
+              ARVeesio - Visualisation 3D
+            </h2>
+
+            <p class="text-sm text-gray-600 mb-3">
+              Optimisation et intégration de contenus 3D pour une application
+              web permitant la visualisation et l'animation, avec support AR.
+            </p>
+
+            <p class="text-sm">Tech: WebGL, Three.js, optimisation d'assets.</p>
+          </article>
+
+          <!-- Projet 3 -->
+
+          <article class="p-4 bg-ctp-surface0 rounded shadow hover:shadow-lg">
+            <h2 class="text-xl font-semibold mb-2">
+              3HArt - Projet collaboratif
+            </h2>
+
+            <p class="text-sm text-gray-600 mb-3">
+              Projet de semestre centré sur la création d'une petite plateforme
+              collaborative. Focus architecture et travail en équipe.
+            </p>
+
+            <p class="text-sm">
+              <a
+                class="text-blue-500 hover:text-blue-800"
+                href="https://github.com/DUT-Info-Montreuil/3HArt"
+                >Voir le projet</a
+              >
+            </p>
+          </article>
+        </section>
+        <section class="mt-10">
+          <h2 class="text-2xl mb-3">Contact</h2>
+
+          <p class="text-gray-700 mb-4">
+            Intéressé par une collaboration ou une offre ? Contactez-moi via
+            téléphone ou mail, ou laissez un message :
+          </p>
+
+          <form action="#" class="max-w-xl">
+            <div class="mb-3">
+              <label class="block text-sm mb-1">Nom</label>
+              <input
+                class="border rounded w-full p-2"
+                type="text"
+                name="name"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="block text-sm mb-1">Email</label>
+              <input
+                class="border rounded w-full p-2"
+                type="email"
+                name="email"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="block text-sm mb-1">Message</label>
+              <textarea
+                class="border rounded w-full p-2"
+                name="message"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                type="submit"
+              >
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

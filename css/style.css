@@ -1,0 +1,186 @@
+:root {
+    /* CSS HEX */
+    --syracuse-red-orange: #e53d00ff;
+    --canary: #ffe900ff;
+    --baby-powder: #fcfff7ff;
+    --surface-powder: #f0f5f3ff;
+    --light-sea-green: #21a0a0ff;
+    --caribbean-current: #046865ff;
+}
+
+
+.bg-primary {
+    --bg-opacity: 1;
+    background-color: var(--syracuse-red-orange);
+    opacity: var(--bg-opacity, 1);
+}
+
+.bg-secondary {
+    --bg-opacity: 1;
+    background-color: var(--canary);
+    opacity: var(--bg-opacity, 1);
+}
+
+.bg-tertiary {
+    --bg-opacity: 1;
+    background-color: var(--light-sea-green);
+    opacity: var(--bg-opacity, 1);
+}
+
+.bg-quaternary {
+    --bg-opacity: 1;
+    background-color: var(--caribbean-current);
+    opacity: var(--bg-opacity, 1);
+}
+
+.bg-surface {
+    --bg-opacity: 1;
+    background-color: var(--baby-powder);
+    opacity: var(--bg-opacity);
+}
+
+.bg-base {
+    --bg-opacity: 1;
+    background-color: var(--surface-powder);
+    opacity: var(--bg-opacity);
+}
+
+.text-primary {
+    --text-opacity: 1;
+    color: var(--syracuse-red-orange);
+    opacity: var(--text-opacity);
+}
+
+.text-secondary {
+    --text-opacity: 1;
+    color: var(--canary);
+    opacity: var(--text-opacity);
+}
+
+.text-tertiary {
+    --text-opacity: 1;
+    color: var(--light-sea-green);
+    opacity: var(--text-opacity);
+}
+
+.text-link {
+    --text-opacity: 1;
+    color: var(--caribbean-current);
+    opacity: var(--text-opacity);
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--light-sea-green);
+    }
+}
+
+.text-surface {
+    --text-opacity: 1;
+    color: var(--baby-powder);
+    opacity: var(--text-opacity, 1);
+}
+
+.text-base {
+    --text-opacity: 1;
+    color: var(--surface-powder);
+    opacity: var(--text-opacity, 1);
+}
+
+
+
+
+
+/* Height Utilities for lvh */
+.h-3lvh {
+    height: 3lvh;
+}
+
+.h-10lvh {
+    height: 10lvh;
+}
+
+.h-20lvh {
+    height: 20lvh;
+}
+
+.h-30lvh {
+    height: 30lvh;
+}
+
+.h-40lvh {
+    height: 40lvh;
+}
+
+.h-50lvh {
+    height: 50lvh;
+}
+
+.h-60lvh {
+    height: 60lvh;
+}
+
+.h-70lvh {
+    height: 70lvh;
+}
+
+.h-80lvh {
+    height: 80lvh;
+}
+
+.h-90lvh {
+    height: 90lvh;
+}
+
+.h-97lvh {
+    height: 97lvh;
+}
+
+/* Styles pour le défilement avec mise en avant */
+.scroll-container {
+    height: calc(100% - 4rem);
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-item {
+    scroll-snap-align: center;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+/* Style pour l'élément centré */
+.scroll-item:hover,
+.scroll-item:target {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.scroll-item>*:not(time) {
+    margin-inline-start: 1rem;
+}
+
+/* Personnalisation de la barre de défilement */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Container de défilement sans effets de fondu */
+.scroll-fade {
+    position: relative;
+}
